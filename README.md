@@ -1,6 +1,6 @@
 # cardano-wasm
 
-Part of an effort at IOG (@Jimbo4350/@palas) to build Cardano Haskell libraries to Wasm.
+Part of an effort at IOG (@Jimbo4350, @palas, and @amesgen) to build Cardano Haskell libraries to Wasm.
 
 Enter the Nix shell of the flake (`nix develop`), and then run
 
