@@ -15,7 +15,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     runHook preBuild
 
     ./build.sh
-    ./build.sh -shared
 
     runHook postBuild
   '';
@@ -53,6 +52,8 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     Libs: -L''\\''${libdir} -lblst
     Libs.private:
     EOF
+
+    wasm32-wasi-clang -shared -Wl,--whole-archive $out/lib/libblst.a -o $out/lib/libblst.so
 
     runHook postInstall
   '';

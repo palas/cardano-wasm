@@ -1,3 +1,5 @@
+active-repositories: hackage.haskell.org, cardano-haskell-packages
+
 packages: .
 
 repository cardano-haskell-packages
@@ -12,17 +14,19 @@ repository cardano-haskell-packages
     d4a35cd3121aa00d18544bb0ac01c3e1691d618f462c46129271bccf39f7e8ee
 
 index-state:
-  , hackage.haskell.org 2025-05-07T16:25:43Z
-  , cardano-haskell-packages 2025-04-29T20:52:57Z
+  , hackage.haskell.org 2025-04-08T10:52:25Z
+  , cardano-haskell-packages 2025-04-22T08:40:01Z
 
 source-repository-package
   type: git
-  location: https://github.com/amesgen/plutus
+  location: https://github.com/amesgen/plutus.git
   tag: dc1edea4458d6fb794b245a26c730620265645f3
-  subdir:
+  subdir: 
     plutus-core
+    plutus-ledger-api
+    plutus-tx
 
-package plutus-core
+package plutus-core 
   flags: +do-not-build-plutus-exec
 
 source-repository-package
@@ -48,6 +52,11 @@ source-repository-package
   subdir:
     basement
     foundation
+
+source-repository-package
+  type: git
+  location: https://github.com/palas/mempack.git
+  tag: 0211addbbbf51011e5348d3696566eb12ccbef07
 
 source-repository-package
   type: git
