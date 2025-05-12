@@ -36,6 +36,26 @@ source-repository-package
 
 source-repository-package
   type: git
+  location: https://github.com/palas/ouroboros-network.git
+  tag: cd409cc3f5dcf6fdfb0ab80eec718ff4515cf76b
+  subdir:
+    ouroboros-network
+    ouroboros-network-framework
+
+source-repository-package
+  type: git
+  location: https://github.com/palas/criterion.git
+  tag: dd160d2b5f051e918e72fe1957d77905682b8d6c
+  subdir:
+    criterion-measurement
+
+source-repository-package
+  type: git
+  location: https://github.com/palas/haskell-lmdb-mock.git
+  tag: c8d61e6eee03ee271e7768c0576110da885aec48
+
+source-repository-package
+  type: git
   location: https://github.com/palas/double-conversion.git
   tag: b2030245727ee56de76507fe305e3741f6ce3260
 
