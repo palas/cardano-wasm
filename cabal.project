@@ -83,6 +83,9 @@ source-repository-package
   location: https://github.com/haskell-wasm/network
   tag: ab92e48e9fdf3abe214f85fdbe5301c1280e14e9
 
+package cardano-crypto-praos
+  flags: -external-libsodium-vrf
+
 constraints: time installed
 allow-newer: time
 
