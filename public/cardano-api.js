@@ -11,6 +11,7 @@ async function initialize() {
   wasi.initialize(instance);
   return { sayNum: instance.exports.sayNum
          , makeTransaction: instance.exports.makeTransaction
+         , mkTxIn: instance.exports.mkTxIn
          };
 }
 export default initialize;

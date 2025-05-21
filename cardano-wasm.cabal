@@ -31,12 +31,13 @@ executable cardano-wasm
   ghc-options:
     -no-hs-main
     -optl-mexec-model=reactor
-    "-optl-Wl,--strip-all,--export=add42,--export=sayNum"
+    "-optl-Wl,--strip-all,--export=mkTxIn,--export=makeTransaction"
 
   other-modules:
     Bridge
 
   build-depends:
+    aeson,
     base,
     cardano-api ^>=10.14.0.0,
     ghc-experimental,

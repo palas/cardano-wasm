@@ -5,7 +5,9 @@
   let promise = cardano_api();
   async function do_async_work() {
     let api = await promise;
-    let tx = await api.makeTransaction(10);
+    let txin = await api.mkTxIn("be6efd42a3d7b9a00d09d77a5d41e55ceaf0bd093a8aa8a893ce70d9caafd978", 0);
+    console.debug(txin);
+    let tx = await api.makeTransaction(txin);
     console.log(tx);
   }
   do_async_work().run();
