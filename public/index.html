@@ -13,6 +13,7 @@
     wasi.initialize(instance);
     instance.exports.sayNum(2).then((result) => { console.log(result) });
     instance.exports.sayNum(433).then((result) => { console.log(result) });
+    instance.exports.makeTransaction(10).then((result) => { console.log(result) });
   });
 </script>
 </body>
