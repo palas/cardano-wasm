@@ -9,8 +9,8 @@ async function initialize() {
   })
   Object.assign(__exports, instance.exports);
   wasi.initialize(instance);
-  return { sayNum: instance.exports.sayNum
-         , makeTransaction: instance.exports.makeTransaction
+  return { mkTransaction: instance.exports.mkTransaction
+         , signTransaction: instance.exports.signTransaction
          , mkTxIn: instance.exports.mkTxIn
          };
 }

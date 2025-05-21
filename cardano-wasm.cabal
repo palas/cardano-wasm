@@ -31,7 +31,7 @@ executable cardano-wasm
   ghc-options:
     -no-hs-main
     -optl-mexec-model=reactor
-    "-optl-Wl,--strip-all,--export=mkTxIn,--export=makeTransaction"
+    "-optl-Wl,--strip-all,--export=mkTxIn,--export=mkTransaction,--export=signTransaction"
 
   other-modules:
     Bridge
@@ -41,4 +41,5 @@ executable cardano-wasm
     base,
     cardano-api ^>=10.14.0.0,
     ghc-experimental,
+    text,
     utf8-string,
